@@ -10,7 +10,7 @@ const connectToSocket = (server) => {
         cors:{
             origin: "*",
             methods: ["GET", "POST"],
-            allowedHeaders:true,
+            allowedHeaders:["*"],
             credentials: true
 
         }
@@ -28,7 +28,7 @@ const connectToSocket = (server) => {
             timeOnline[socket.id]  = Date.now();
 
             for(let a = 0; a < connection[path].length; a++){
-                io.to(connection[path][a]).emit("user-joined", socket.id)
+                io.to(connection[path][a]).emit("user-joined", socket.id , connection[path])
             }
             if(message[path] !== undefined){
                 for(let a = 0; a < connection[path].length; ++a){
@@ -95,8 +95,6 @@ const connectToSocket = (server) => {
         })
     })
     
-
-
 
     return io;
 }
