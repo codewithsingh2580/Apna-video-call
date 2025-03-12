@@ -1,0 +1,149 @@
+.landingpageContainer{
+  height: 100vh;
+  width: 100vw;
+  background: url("/public/background.png");
+  background-repeat: no-repeat ;
+  background-size: cover;
+  color: white;
+}
+
+.landingpageContainer nav{
+  padding-inline: 1.2rem;
+  padding-block: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landingpageContainer nav h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.landingpageContainer nav .navlist{
+  display: flex;
+  gap: 1.2rem;
+  cursor:pointer;
+}
+.landingMainContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  align-items: center;
+  height: 80vh;
+}
+.landingMainContainer > div:nth-child(1){
+  font-size: 2.2rem;
+}
+.landingMainContainer > div:nth-child(1) div[role='button']{
+  background: #FF9839 ;
+  padding: 0 1rem 0.7rem 1rem;
+  width: fit-content;
+  border-radius: 10px;
+  margin-top: 1.4rem;
+}
+.landingMainContainer > div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.landingMainContainer > div:nth-child(2) img{
+  height: 70vh;
+  width: auto;
+}
+
+.maindiv{
+  background-color: rgb(191, 195, 255);
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+  background-color: #FF9839;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 94vh;
+  gap: 10vw;
+  justify-content: center;
+}
+#btn{
+  background-color: #FF9839;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 40vw;
+  height: auto;
+  border-radius: 20px;
+}
+.Heading{
+  font-size: 2rem;
+}
+#outlined-basic{
+  width: 30rem;
+}
+
+/* using history page */
+
+.historyMnPage{
+  background:linear-gradient(135deg, #1E3A8A, #9333EA);
+}
+.div{
+  background-color: #e8b280;
+  margin-top: 0.5rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  height: 10rem;
+  border-radius: 20px;
+}
+.historyMnPage{
+  background:linear-gradient(135deg, #1E3A8A, #9333EA);
+  height: 100vh;
+  width: auto;
+}
+.Content{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: aliceblue;
+}
+
+/* using Lobby page */
+
+.mainLobby{
+  background:linear-gradient(-135deg, #1E3A8A, #9333);
+  height: 100vh;
+  width: auto;
+ 
+
+}
+.Lobby{
+  /* margin-left: 5rem; */
+  text-align: center;
+  font-size: 3rem;
+  
+  
+}
+/* #outlined-basic{
+  height: 2rem;
+  width: 30rem;
+  margin-left: 30%;
+} */
