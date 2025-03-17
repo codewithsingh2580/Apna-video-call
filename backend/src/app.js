@@ -2,7 +2,7 @@ import express from "express";
 import { createServer } from "node:http";
 import { Server } from "socket.io";
 import mongoose from "mongoose";
-import connectToSocket from "./controller/shoketManjer.js";
+import { connectToSocket }  from "./controller/socketManager.js";
 import cors from "cors";
 import userRoute from "./routes/userRoute.js";
 

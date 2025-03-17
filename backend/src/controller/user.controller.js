@@ -3,8 +3,6 @@ import { User } from "../models/user.model.js";
 import bcrypt, {hash} from "bcrypt"
 
 import { Meeting } from "../models/meeting.model.js";
-
-
 import crypto from "crypto";
 
 const getUserHistory = async (req, res) => {
