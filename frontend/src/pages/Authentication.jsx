@@ -18,7 +18,9 @@ import { Snackbar } from '@mui/material';
 const defaultTheme = createTheme();
 
 export default function Authentication() {
+
     
+
     const [username, setUsername] = React.useState("");
     const [password, setPassword] = React.useState("");
     const [name, setName] = React.useState("");
@@ -54,7 +56,7 @@ export default function Authentication() {
         } catch (err) {
 
             console.log(err);
-            let message = err.response?.data?.message || "An error occurred.";
+            let message = (err.response.data.message);
             setError(message);
         }
     }
@@ -70,7 +72,7 @@ export default function Authentication() {
                     sm={4}
                     md={7}
                     sx={{
-                        backgroundImage: 'url(https://source.unsplash.com/1600x900/?nature,water)',
+                        backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
                         backgroundRepeat: 'no-repeat',
                         backgroundColor: (t) =>
                             t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -120,7 +122,7 @@ export default function Authentication() {
                                 required
                                 fullWidth
                                 id="username"
-                                label="username"
+                                label="Username"
                                 name="username"
                                 value={username}
                                 autoFocus
@@ -162,11 +164,8 @@ export default function Authentication() {
                 open={open}
                 autoHideDuration={4000}
                 message={message}
-                onClose={() => setOpen(false)} 
             />
 
         </ThemeProvider>
     );
 }
-
-
